@@ -11,6 +11,10 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+main{
+    height:calc(100vh - 120px) ;
+}
+
 .top-buttons {
     display: flex;
     justify-content: flex-end;
@@ -79,8 +83,9 @@ body {
 
 /*footer*/
 footer{
-    height: 90px;
-    background-color: lime;
+    height: 75px;
+    background-color: #222222;
+    color: white;
 }
 
 .flex-centered{
@@ -88,4 +93,30 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-d-row{
+    display: flex;
+    flex-direction: row;
+}
+
+footer section div.button{
+    font-size: 1.4rem;
+    margin-bottom: .25rem;
+}
+
+footer > section div.button > p.fa-share-from-square{
+    color: #52cc06;
+}
+
+footer > section div.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .55rem;
+}
+
+.end-meeting{
+    color: red;
 }
